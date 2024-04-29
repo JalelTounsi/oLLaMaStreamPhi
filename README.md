@@ -1,11 +1,9 @@
 
 # oLLaMaStreamPhi
 # Build an open source AI assistant with Streamlit, Microsoft Phi-3 & Ollama
-The codebase has code for building Chatbot using the Streamlit Python library. 
-For accessing LLMs, it uses the Ollama Python library which is a wrapper around Ollama REST APIs.
-Ollama is a CLI tool that lets us run open-source LLMs on our computers for free.
+
 Feel free to check the below video to understand the code and set up Chatbot on your computer.
-* [AI assisstant using Streamlit, Phi3 and Ollama](https://www.youtube.com/@JalelTounsi)
+[AI assisstant using Streamlit, Phi3 and Ollama](https://www.youtube.com/@JalelTounsi)
 
 Let's build a chatbot with just Python using the Streamlit library, Ollama, and Microsoft Phi-3. 
 
