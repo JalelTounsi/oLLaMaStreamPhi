@@ -16,7 +16,7 @@ for msg in st.session_state.messages:
     else:
         st.chat_message(msg["role"], avatar="🤖").write(msg["content"])
 
-## Generator for Streaming Tokens
+## Configure the model to use (in our case, the Phi-3)
 def generate_response():
     response = ollama.chat(model='phi3', stream=True, messages=st.session_state.messages)
     for partial_resp in response:
