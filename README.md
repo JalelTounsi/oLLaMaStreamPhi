@@ -26,64 +26,90 @@ You can find more info in the official Phi-3 Mini docs.
 
 Steps
 
-Create a new conda environment
+1 - Create a new conda environment
+```
 conda create --name envStreamPhi
-Activate the environment
+```
+2 - Activate the environment
+```
 conda activate envStreamPhi
-Clone StreamLit template
+```
+3 - Clone StreamLit template
+```
 git clone https://github.com/streamlit/streamlit.git
-Install ollama
-
-
-pull the phi-3 model
-the model we will be using is located here:
+```
+4 - Install ollama & pull the phi-3 model
+```
 ollama pull phi3
-Pull the Embeddings model:
+```
+5 - Pull the Embeddings model:
+```
 ollama pull nomic-embed-text
-Test installation
+```
+6 - Test installation
+```
 streamlit hello
+```
+
 Build the AI assisstant
 
 In order to build the AI assisstant, you have 2 choices : clone the repo and get all the code from the get-go or coding along with me.
 
-I - First option : Clone the project from Github 
+I - First option : 
+1 - Clone the project from Github 
+```
 git clone https://github.com/JalelTounsi/oLLaMaStreamPhi.git
-
-run the application
+```
+2 - run the application
+```
 streamlit run app.py
+```
 
-II - Second option: code along
-Create your app.py file
-
-Add imports
+II - Second option: 
+code along
+1 - Create your app.py file
+```
+app.py
+```
+2 - Add imports
+```
 import streamlit as st
 import ollama
+```
 
-Add the defacto message
+3 - Add the defacto message
+```
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "Hello tehre, how can I help you, today?"}]
-Add the message history
+```
+4 - Add the message history
+```
 for msg in st.session_state.messages:
     if msg["role"] == "user":
         st.chat_message(msg["role"], avatar="🧑‍💻").write(msg["content"])
     else:
         st.chat_message(msg["role"], avatar="🤖").write(msg["content"])
-Configure model
+```
+5 - Configure model
+```
 def generate_response():
     response = ollama.chat(model='phi3', stream=True, messages=st.session_state.messages)
     for partial_resp in response:
         token = partial_resp["message"]["content"]
         st.session_state["full_message"] += token
         yield token
-Configure the prompt
+```
+6 - Configure the prompt
+```
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user", avatar="🧑‍💻").write(prompt)
     st.session_state["full_message"] = ""
     st.chat_message("assistant", avatar="🤖").write_stream(generate_response)
     st.session_state.messages.append({"role": "assistant", "content": st.session_state["full_message"]})   
-
-all the codebase of app.py
+```
+7 - all the codebase of app.py
+```
 import streamlit as st
 import ollama
 
@@ -113,6 +139,8 @@ if prompt := st.chat_input():
     st.session_state["full_message"] = ""
     st.chat_message("assistant", avatar="🤖").write_stream(generate_response)
     st.session_state.messages.append({"role": "assistant", "content": st.session_state["full_message"]})   
-    
+```
 Run the Streamlit app 
+```
 streamlit run app.py
+```
