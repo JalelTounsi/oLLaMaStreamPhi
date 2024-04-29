@@ -9,18 +9,15 @@ Feel free to check the below video to understand the code and set up Chatbot on 
 
 Let's build a chatbot with just Python using the Streamlit library, Ollama, and Microsoft Phi-3. 
 
-Streamlit
-Streamlit turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
+Streamlit: turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
 You can find more info in the official Streamlit docs.
 
 
-Ollama
-Ollama allows you to run open-source large language models, locally
+Ollama: allows you to run open-source large language models, locally
 You can find more info in the official Ollama docs.
 
 
-Phi-3 Mini
-Phi-3 Mini is a 3.8B parameters, lightweight, state-of-the-art open model by Microsoft.
+Phi-3 Mini: is a 3.8B parameters, lightweight, state-of-the-art open model by Microsoft.
 You can find more info in the official Phi-3 Mini docs.
 
 
