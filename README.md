@@ -9,19 +9,22 @@ Feel free to check the below video to understand the code and set up Chatbot on 
 
 Let's build a chatbot with just Python using the Streamlit library, Ollama, and Microsoft Phi-3. 
 
-Streamlit: turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
+## Streamlit: 
+turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
 You can find more info in the official Streamlit docs.
 
 
-Ollama: allows you to run open-source large language models, locally
+## Ollama: 
+allows you to run open-source large language models, locally
 You can find more info in the official Ollama docs.
 
 
-Phi-3 Mini: is a 3.8B parameters, lightweight, state-of-the-art open model by Microsoft.
+## Phi-3 Mini: 
+is a 3.8B parameters, lightweight, state-of-the-art open model by Microsoft.
 You can find more info in the official Phi-3 Mini docs.
 
 
-Steps
+# Steps
 
 1 - Create a new conda environment
 ```
@@ -48,11 +51,11 @@ ollama pull nomic-embed-text
 streamlit hello
 ```
 
-Build the AI assisstant
+# Build the AI assisstant
 
 In order to build the AI assisstant, you have 2 choices : clone the repo and get all the code from the get-go or coding along with me.
 
-I - First option : 
+## I - First option : 
 1 - Clone the project from Github 
 ```
 git clone https://github.com/JalelTounsi/oLLaMaStreamPhi.git
@@ -62,7 +65,7 @@ git clone https://github.com/JalelTounsi/oLLaMaStreamPhi.git
 streamlit run app.py
 ```
 
-II - Second option: 
+## II - Second option: 
 code along
 1 - Create your app.py file
 ```
