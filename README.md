@@ -2,8 +2,8 @@
 # oLLaMaStreamPhi
 # Build an open source AI assistant with Streamlit, Microsoft Phi-3 & Ollama
 
-Feel free to check the below video to understand the code, follow along and run the AI assisstant locally on your computer.
-[AI assisstant using Streamlit, Phi3 and Ollama]([https://www.youtube.com/@JalelTounsi](https://youtu.be/Cloo3UGE01Y))
+Feel free to check the below video to understand the code, follow along and run the AI assistant locally on your computer.
+[AI assistant using Streamlit, Phi3 and Ollama]([https://www.youtube.com/@JalelTounsi](https://youtu.be/Cloo3UGE01Y))
 
 Let's build a chatbot with just Python using the Streamlit library, Ollama, and Microsoft Phi-3. 
 
@@ -49,9 +49,9 @@ ollama pull nomic-embed-text
 streamlit hello
 ```
 
-# Build the AI assisstant
+# Build the AI assistant
 
-In order to build the AI assisstant, you have 2 choices : clone the repo and get all the code from the get-go or coding along with me.
+In order to build the AI assistant, you have 2 choices : clone the repo and get all the code from the get-go or coding along with me.
 
 ## I - First option : 
 1 - Clone the project from Github 
